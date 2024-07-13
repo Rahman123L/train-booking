@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking</title>
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+
+</head>
+<body class="bg-[#FFFFFF]">
+
+    <!-- Navbar Start -->
+    <nav class="relative bg-white shadow-sm">
+        <div class="container px-6 md:px-16 py-4 mx-auto">
+            <div class="flex justify-between items-center">
+                <a href="index.html">
+                    <h1 class="text-base md:text-lg text-gray-500 font-semibold capitalize">Train Booking</h1>
+                </a>
+                <a href="booking.html">
+                    <button class="bg-blue-500 py-2 px-6 md:px-10 rounded-lg transition transform duration-700 hover:bg-blue-600 focus:scale-[0.98]">
+                        <h1 class="text-xs md:text-base text-white transition transform duration-500 font-medium capitalize">Booking</h1>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Booking Start -->
+    <section class="container w-[90%] mx-auto my-10 space-y-6">
+        <div class="w-full bg-slate-100 border-[0.5px] border-gray-200 rounded-xl">
+            <div class="relative md:flex justify-normal items-center gap-4">
+                <div class="absolute -top-2 -right-2 p-1 bg-gray-500 bg-opacity-70 rounded-full cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 md:w-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div class="w-full md:w-[20rem]">
+                    <img class="w-full h-full object-contain rounded-t-xl md:rounded-t-none md:rounded-ss-xl md:rounded-es-xl" src="images/Paris to Nice.jpg">
+                </div>
+                <div class="p-7 md:p-5 space-y-3">
+                    <div class="md:ml-2">
+                        <p class="text-[10px] md:base text-gray-500 font-normal capitalize">Tujuan Keberangkatan</p>
+                        <h1 class="text-base md:text-xl font-medium tracking-tight text-gray-800">Paris to Nice</h1>
+                    </div>
+                    <div class="md:flex md:ml-2 justify-normal items-center gap-5 space-y-2 md:space-y-0">
+                        <div class="space-y-1">
+                            <p class="text-[10px] md:base text-gray-500 font-normal capitalize">Tanggal Keberangkatan</p>
+                            <div class="flex justify-normal items-center gap-2">
+                                <svg class="w-4 md:w-5 lg:w-7 stroke-[1.5] stroke-slate-800" fill="none" stroke="currentColor" viewBox="-7.5 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14V12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12V14C22 17.7712 22 19.6569 20.8284 20.8284C20.1752 21.4816 19.3001 21.7706 18 21.8985" stroke-linecap="round"/>
+                                    <path d="M7 4V2.5" stroke-linecap="round"/>
+                                    <path d="M17 4V2.5" stroke-linecap="round"/>
+                                    <path d="M21.5 9H16.625H10.75M2 9H5.875" stroke-linecap="round"/>
+                                    <path d="M18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17C16 16.4477 16.4477 16 17 16C17.5523 16 18 16.4477 18 17Z" fill="#1C274C"/>
+                                    <path d="M18 13C18 13.5523 17.5523 14 17 14C16.4477 14 16 13.5523 16 13C16 12.4477 16.4477 12 17 12C17.5523 12 18 12.4477 18 13Z" fill="#1C274C"/>
+                                    <path d="M13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16C12.5523 16 13 16.4477 13 17Z" fill="#1C274C"/>
+                                    <path d="M13 13C13 13.5523 12.5523 14 12 14C11.4477 14 11 13.5523 11 13C11 12.4477 11.4477 12 12 12C12.5523 12 13 12.4477 13 13Z" fill="#1C274C"/>
+                                    <path d="M8 17C8 17.5523 7.55228 18 7 18C6.44772 18 6 17.5523 6 17C6 16.4477 6.44772 16 7 16C7.55228 16 8 16.4477 8 17Z" fill="#1C274C"/>
+                                    <path d="M8 13C8 13.5523 7.55228 14 7 14C6.44772 14 6 13.5523 6 13C6 12.4477 6.44772 12 7 12C7.55228 12 8 12.4477 8 13Z" fill="#1C274C"/>
+                                </svg>
+                                <p class="text-xs md:text-base font-normal text-slate-800">30/10/2024</p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-[10px] md:base text-gray-500 font-normal capitalize">Jumlah Penumpang</p>
+                            <div class="flex justify-normal items-center gap-1">
+                                <svg class="w-4 md:w-5 lg:w-7 stroke-[0] stroke-slate-800" fill="#1e293b" stroke="currentColor" viewBox="-7.5 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.36 5.32h-7.76c-2.52 0-4.6 2.080-4.6 4.64v9.28c0 2.12 1.44 3.88 3.36 4.44l-1.56 1.56c-0.32 0.32-0.32 0.84 0 1.16 0.16 0.16 0.36 0.24 0.6 0.24 0.2 0 0.44-0.080 0.6-0.24l2.56-2.56h5.88l2.56 2.56c0.16 0.16 0.36 0.24 0.6 0.24s0.44-0.080 0.6-0.24c0.32-0.32 0.32-0.84 0-1.16l-1.6-1.56c1.92-0.56 3.36-2.32 3.36-4.44v-9.28c0-2.56-2.040-4.64-4.6-4.64zM15.32 19.24c0 1.64-1.32 2.96-2.96 2.96h-7.76c-1.64 0-2.96-1.32-2.96-2.96v-9.28c0-1.64 1.32-2.96 2.96-2.96h7.76c1.64 0 2.96 1.32 2.96 2.96v9.28zM8.48 15.56c-1.44 0-2.6 1.16-2.6 2.6s1.16 2.6 2.6 2.6 2.6-1.16 2.6-2.6-1.16-2.6-2.6-2.6zM8.48 19.080c-0.52 0-0.92-0.4-0.92-0.92s0.4-0.92 0.92-0.92 0.92 0.4 0.92 0.92c0 0.48-0.4 0.92-0.92 0.92zM12.16 8.36h-7.32c-1.040 0-1.84 0.84-1.84 1.84v2.36c0 1.040 0.84 1.84 1.84 1.84h7.32c1.040 0 1.84-0.84 1.84-1.84v-2.36c0-1-0.84-1.84-1.84-1.84zM12.36 12.56c0 0.12-0.080 0.2-0.2 0.2h-7.32c-0.12 0-0.2-0.080-0.2-0.2v-2.36c0-0.12 0.080-0.2 0.2-0.2h7.32c0.12 0 0.2 0.080 0.2 0.2v2.36z"></path>
+                                </svg>
+                                <p class="text-xs md:text-base font-normal text-slate-800">1 Orang</p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-[10px] md:base text-gray-500 font-normal capitalize">Kelas Kereta Api</p>
+                            <div class="flex justify-normal items-center gap-1">
+                                <svg class="w-4 md:w-5 lg:w-7 stroke-[1.5] stroke-slate-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="text-xs md:text-base font-normal text-slate-800">Luxury</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-normal items-center gap-2 md:ml-2">
+                        <h1 class="text-sm md:text-lg text-gray-500 font-normal capitalize">Harga</h1>
+                        <p class="text-sm md:text-lg text-slate-800 font-semibold">$120</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-slate-100 border-[0.5px] border-gray-200 rounded-xl">
+            <div class="relative md:flex justify-normal items-center gap-4">
+                <div class="absolute -top-2 -right-2 p-1 bg-gray-500 bg-opacity-70 rounded-full cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 md:w-6 stroke-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+                <div class="w-full md:w-[20rem]">
+                    <img class="w-full h-full object-contain rounded-t-xl md:rounded-t-none md:rounded-ss-xl md:rounded-es-xl" src="images/Bordeaux to Strasbourg.jpg">
+                </div>
+                <div class="p-7 md:p-5 space-y-3">
+                    <div class="md:ml-2">
+                        <p class="text-[10px] md:base text-gray-500 font-normal capitalize">Tujuan Keberangkatan</p>
+                        <h1 class="text-base md:text-xl font-medium tracking-tight text-gray-800">Bordeaux to Strasbourg</h1>
+                    </div>
+                    <div class="md:flex md:ml-2 justify-normal items-center gap-5 space-y-2 md:space-y-0">
+                        <div class="space-y-1">
+                            <p class="text-[10px] md:base text-gray-500 font-normal capitalize">Tanggal Keberangkatan</p>
+                            <div class="flex justify-normal items-center gap-2">
+                                <svg class="w-4 md:w-5 lg:w-7 stroke-[1.5] stroke-slate-800" fill="none" stroke="currentColor" viewBox="-7.5 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 22H10C6.22876 22 4.34315 22 3.17157 20.8284C2 19.6569 2 17.7712 2 14V12C2 8.22876 2 6.34315 3.17157 5.17157C4.34315 4 6.22876 4 10 4H14C17.7712 4 19.6569 4 20.8284 5.17157C22 6.34315 22 8.22876 22 12V14C22 17.7712 22 19.6569 20.8284 20.8284C20.1752 21.4816 19.3001 21.7706 18 21.8985" stroke-linecap="round"/>
+                                    <path d="M7 4V2.5" stroke-linecap="round"/>
+                                    <path d="M17 4V2.5" stroke-linecap="round"/>
+                                    <path d="M21.5 9H16.625H10.75M2 9H5.875" stroke-linecap="round"/>
+                                    <path d="M18 17C18 17.5523 17.5523 18 17 18C16.4477 18 16 17.5523 16 17C16 16.4477 16.4477 16 17 16C17.5523 16 18 16.4477 18 17Z" fill="#1C274C"/>
+                                    <path d="M18 13C18 13.5523 17.5523 14 17 14C16.4477 14 16 13.5523 16 13C16 12.4477 16.4477 12 17 12C17.5523 12 18 12.4477 18 13Z" fill="#1C274C"/>
+                                    <path d="M13 17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17C11 16.4477 11.4477 16 12 16C12.5523 16 13 16.4477 13 17Z" fill="#1C274C"/>
+                                    <path d="M13 13C13 13.5523 12.5523 14 12 14C11.4477 14 11 13.5523 11 13C11 12.4477 11.4477 12 12 12C12.5523 12 13 12.4477 13 13Z" fill="#1C274C"/>
+                                    <path d="M8 17C8 17.5523 7.55228 18 7 18C6.44772 18 6 17.5523 6 17C6 16.4477 6.44772 16 7 16C7.55228 16 8 16.4477 8 17Z" fill="#1C274C"/>
+                                    <path d="M8 13C8 13.5523 7.55228 14 7 14C6.44772 14 6 13.5523 6 13C6 12.4477 6.44772 12 7 12C7.55228 12 8 12.4477 8 13Z" fill="#1C274C"/>
+                                </svg>
+                                <p class="text-xs md:text-base font-normal text-slate-800">30/10/2024</p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-[10px] md:base text-gray-500 font-normal capitalize">Jumlah Penumpang</p>
+                            <div class="flex justify-normal items-center gap-1">
+                                <svg class="w-4 md:w-5 lg:w-7 stroke-[0] stroke-slate-800" fill="#1e293b" stroke="currentColor" viewBox="-7.5 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.36 5.32h-7.76c-2.52 0-4.6 2.080-4.6 4.64v9.28c0 2.12 1.44 3.88 3.36 4.44l-1.56 1.56c-0.32 0.32-0.32 0.84 0 1.16 0.16 0.16 0.36 0.24 0.6 0.24 0.2 0 0.44-0.080 0.6-0.24l2.56-2.56h5.88l2.56 2.56c0.16 0.16 0.36 0.24 0.6 0.24s0.44-0.080 0.6-0.24c0.32-0.32 0.32-0.84 0-1.16l-1.6-1.56c1.92-0.56 3.36-2.32 3.36-4.44v-9.28c0-2.56-2.040-4.64-4.6-4.64zM15.32 19.24c0 1.64-1.32 2.96-2.96 2.96h-7.76c-1.64 0-2.96-1.32-2.96-2.96v-9.28c0-1.64 1.32-2.96 2.96-2.96h7.76c1.64 0 2.96 1.32 2.96 2.96v9.28zM8.48 15.56c-1.44 0-2.6 1.16-2.6 2.6s1.16 2.6 2.6 2.6 2.6-1.16 2.6-2.6-1.16-2.6-2.6-2.6zM8.48 19.080c-0.52 0-0.92-0.4-0.92-0.92s0.4-0.92 0.92-0.92 0.92 0.4 0.92 0.92c0 0.48-0.4 0.92-0.92 0.92zM12.16 8.36h-7.32c-1.040 0-1.84 0.84-1.84 1.84v2.36c0 1.040 0.84 1.84 1.84 1.84h7.32c1.040 0 1.84-0.84 1.84-1.84v-2.36c0-1-0.84-1.84-1.84-1.84zM12.36 12.56c0 0.12-0.080 0.2-0.2 0.2h-7.32c-0.12 0-0.2-0.080-0.2-0.2v-2.36c0-0.12 0.080-0.2 0.2-0.2h7.32c0.12 0 0.2 0.080 0.2 0.2v2.36z"></path>
+                                </svg>
+                                <p class="text-xs md:text-base font-normal text-slate-800">1 Orang</p>
+                            </div>
+                        </div>
+                        <div class="">
+                            <p class="text-[10px] md:base text-gray-500 font-normal capitalize">Kelas Kereta Api</p>
+                            <div class="flex justify-normal items-center gap-1">
+                                <svg class="w-4 md:w-5 lg:w-7 stroke-[1.5] stroke-slate-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <p class="text-xs md:text-base font-normal text-slate-800">Luxury</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex justify-normal items-center gap-2 md:ml-2">
+                        <h1 class="text-sm md:text-lg text-gray-500 font-normal capitalize">Harga</h1>
+                        <p class="text-sm md:text-lg text-slate-800 font-semibold">$120</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Booking End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-white">
+        <div class="container p-6 mx-auto">    
+            <hr class="h-px my-6 bg-gray-200 border-none">
+            <p class="text-[8px] md:text-base text-center text-gray-500 font-normal">© Train Booking 2024 - All rights reserved</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Script Start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Script End -->
+     
+</body>
+</html>

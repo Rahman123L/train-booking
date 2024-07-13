@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Booking</title>
+
+    <!-- Style Css -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+
+</head>
+<body class="bg-[#FFFFFF]">
+
+    <!-- Navbar Start -->
+    <nav class="relative bg-white shadow-sm">
+        <div class="container px-6 md:px-16 py-4 mx-auto">
+            <div class="flex justify-between items-center">
+                <a href="index.html">
+                    <h1 class="text-base md:text-lg text-gray-500 font-semibold capitalize">Train Booking</h1>
+                </a>
+                <a href="booking.html">
+                    <button class="bg-blue-500 py-2 px-6 md:px-10 rounded-lg transition transform duration-700 hover:bg-blue-600 focus:scale-[0.98]">
+                        <h1 class="text-xs md:text-base text-white transition transform duration-500 font-medium capitalize">Booking</h1>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section class="relative z-20">
+        <div class="w-full h-full z-10 absolute mx-auto bg-slate-600 bg-opacity-30">
+            <div class="px-10 lg:px-20 lg:py-14">
+                <div class="flex-col">
+
+                    <!-- Text Hero -->
+                    <div class="grid mt-10 md:mt-5 lg:w-[70%] lg:pt-10 pb-1 lg:pb-5 gap-4">
+
+                        <!-- Text -->
+                        <h1 class="inter text-2xl lg:text-5xl font-bold text-[#FFF]">Transport <span class="text-orange-500 font-bold">Solutions</span> <br> for your business</h1>
+                        <h1 class="inter text-xs lg:text-lg font-normal text-[#ccc] duration-700">Transport Solutions differentiates itself by offering faster, safer, <br> and more cost-effective transportation services compared to our competitors.</h1>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="flex items-center gap-3 md:gap-5">
+                        <a href="login.html">
+                            <button class="w-full flex justify-center items-center gap-2 py-2.5 px-8 md:px-10 mt-2 group bg-blue-500 rounded-lg">
+                                <h1 class="inter transition transform capitalize duration-700 text-xs lg:text-base font-medium text-center text-white">
+                                    Explore</h1>
+                                <svg class="w-4 md:w-5 lg:w-7 stroke-[2] stroke-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 12H20M20 12L16 8M20 12L16 16" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Background -->
+        <div class="w-full h-[17rem] lg:h-[35rem] bg-cover bg-center bg-no-repeat" style='background-image: url("images/bg.webp")'></div>
+
+        <!-- Form Pemesanan -->
+        <section class="absolute mt-8 md:mt-0 md:-bottom-[17.5rem] w-full flex justify-center items-center">
+            <div class="w-[90%] md:w-[70%] bg-slate-100 bg-opacity-80 p-5 md:p-8 mx-auto rounded-xl md:rounded-3xl">
+                <h2 class="text-sm md:text-lg font-bold text-black capitalizee">Pemesanan TIket Kereta Api</h2>
+                <form action="" method="">
+                    <div class="grid grid-cols-1 gap-2 md:gap-6 mt-4 sm:grid-cols-2">            
+                        <div>
+                            <label class="text-xs md:text-base text-gray-700 font-medium capitalize">Tujuan Keberangkatan</label>
+                            <select class="block w-full text-xs md:text-base px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-20 focus:outline-none focus:ring">
+                                <option class="text-gray-700 text-start" value="" disabled selected>Pilih Tujuan Keberangkatan</option>
+                                <option class="text-gray-700 text-start" value="1">Paris to Nice</option>
+                                <option class="text-gray-700 text-start" value="2">Bordeaux to Strasbourg</option>
+                                <option class="text-gray-700 text-start" value="3">Marseille to Avignon</option>
+                                <option class="text-gray-700 text-start" value="4">Lyon to Chamonix</option>
+                            </select>
+                        </div>
+            
+                        <div>
+                            <label class="text-xs md:text-base text-gray-700 font-medium capitalize">Tanggal Keberangkatan</label>
+                            <input type="date" class="block w-full text-xs md:text-base px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-20 focus:outline-none focus:ring" autocomplete="off" required>
+                        </div>
+            
+                        <div>
+                            <label class="text-xs md:text-base text-gray-700 font-medium capitalize">Jumlah Penumpang</label>
+                            <input type="number" class="block w-full text-xs md:text-base px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-20 focus:outline-none focus:ring" autocomplete="off" required>
+                        </div>
+
+                        <div>
+                            <label class="text-xs md:text-base text-gray-700 font-medium capitalize">Kelas Kereta Api</label>
+                            <select class="block w-full text-xs md:text-base px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-20 focus:outline-none focus:ring">
+                                <option class="text-gray-700 text-start" value="" disabled selected>Pilih Kelas Kereta Api</option>
+                                <option class="text-gray-700 text-start" value="1">Luxury</option>
+                                <option class="text-gray-700 text-start" value="2">Economy</option>
+                                <option class="text-gray-700 text-start" value="3">Executive</option>
+                            </select>
+                        </div>
+                    </div>
+            
+                    <div class="flex justify-end mt-6">
+                        <button class="px-6 md:px-10 py-2.5 text-white text-xs md:text-base transition-colors duration-300 transform bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600">Pesan Tiket</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+    <!-- Hero End -->
+
+    <!-- Feature Start -->
+    <section class="w-[90%] md:w-[80%] mt-[28rem] md:mt-[19rem] px-6 py-10 mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            <div class="p-5 md:py-10 md:px-8 space-y-1 border-[0.5px] border-blue-400 rounded-xl">
+                <span class="inline-block text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 md:w-8 h-6 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                    </svg>
+                </span>
+                <h1 class="text-sm md:text-lg font-medium text-gray-700 capitalize">Easy and Fast Ticket Booking</h1>
+                <p class="text-[10px] md:text-sm text-gray-500 font-light capitalize">
+                    Enjoy the convenience of booking tickets for various events. Quickly select your ticket and get instant confirmation.
+                </p>
+            </div>
+
+            <div class="p-5 md:py-10 md:px-8 space-y-1 border-[0.5px] border-blue-400 rounded-xl">
+                <span class="inline-block text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 md:w-8 h-6 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+                    </svg>
+                </span>
+                <h1 class="text-sm md:text-lg font-medium text-gray-700 capitalize">Wide Range of Payment Options</h1>
+                <p class="text-[10px] md:text-sm text-gray-500 font-light capitalize">
+                    We offer a variety of payment methods for your convenience. Choose the most suitable and secure one for your transaction.
+                </p>
+            </div>
+
+            <div class="p-5 md:py-10 md:px-8 space-y-1 border-[0.5px] border-blue-400 rounded-xl">
+                <span class="inline-block text-blue-500">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-6 md:w-8 h-6 md:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                    </svg>
+                </span>
+                <h1 class="text-sm md:text-lg font-medium text-gray-700 capitalize">Current and Popular Events</h1>
+                <p class="text-[10px] md:text-sm text-gray-500 font-light capitalize">
+                    Get access to a wide range of current and popular events. Don't miss the opportunity to watch your favorite shows.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Feature End -->
+
+    <!-- Blog Start -->
+    <section class="w-[90%] mt-[1rem] mx-auto space-y-10">
+        <div class="text-center md:text-start">
+            <h1 class="text-lg md:text-2xl text-slate-800 font-medium">Popular rail routes this month</h1>
+            <p class="text-[10px] md:text-sm text-gray-500 font-normal">Discover the most trending hotels worldwide for an unforgettable exprerience.</p>
+        </div>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+            <div class="w-full bg-white space-y-3">
+                <div class="w-full h-[10rem] md:h-[15rem] object-contain">
+                    <img class="w-full h-full rounded-xl" src="images/Paris to Nice.jpg"/>
+                </div>
+                <div class="space-y-2 md:space-y-3 mr-10">
+                    <h1 class="md:ml-2 text-base md:text-xl font-medium tracking-tight text-gray-800">Paris to Nice</h1>
+                    <div class="space-y-1">
+                        <div class="flex justify-normal items-center gap-1">
+                            <svg class="w-4 md:w-5 lg:w-7 stroke-[1.5] stroke-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="text-xs md:text-base font-normal text-gray-500">Luxury</p>
+                        </div>
+                        <div class="flex justify-normal items-center gap-1">
+                            <svg class="w-4 md:w-5 lg:w-7 stroke-[0] stroke-gray-500" fill="#6b7280" stroke="currentColor" viewBox="-7.5 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.36 5.32h-7.76c-2.52 0-4.6 2.080-4.6 4.64v9.28c0 2.12 1.44 3.88 3.36 4.44l-1.56 1.56c-0.32 0.32-0.32 0.84 0 1.16 0.16 0.16 0.36 0.24 0.6 0.24 0.2 0 0.44-0.080 0.6-0.24l2.56-2.56h5.88l2.56 2.56c0.16 0.16 0.36 0.24 0.6 0.24s0.44-0.080 0.6-0.24c0.32-0.32 0.32-0.84 0-1.16l-1.6-1.56c1.92-0.56 3.36-2.32 3.36-4.44v-9.28c0-2.56-2.040-4.64-4.6-4.64zM15.32 19.24c0 1.64-1.32 2.96-2.96 2.96h-7.76c-1.64 0-2.96-1.32-2.96-2.96v-9.28c0-1.64 1.32-2.96 2.96-2.96h7.76c1.64 0 2.96 1.32 2.96 2.96v9.28zM8.48 15.56c-1.44 0-2.6 1.16-2.6 2.6s1.16 2.6 2.6 2.6 2.6-1.16 2.6-2.6-1.16-2.6-2.6-2.6zM8.48 19.080c-0.52 0-0.92-0.4-0.92-0.92s0.4-0.92 0.92-0.92 0.92 0.4 0.92 0.92c0 0.48-0.4 0.92-0.92 0.92zM12.16 8.36h-7.32c-1.040 0-1.84 0.84-1.84 1.84v2.36c0 1.040 0.84 1.84 1.84 1.84h7.32c1.040 0 1.84-0.84 1.84-1.84v-2.36c0-1-0.84-1.84-1.84-1.84zM12.36 12.56c0 0.12-0.080 0.2-0.2 0.2h-7.32c-0.12 0-0.2-0.080-0.2-0.2v-2.36c0-0.12 0.080-0.2 0.2-0.2h7.32c0.12 0 0.2 0.080 0.2 0.2v2.36z"></path>
+                            </svg>
+                            <p class="text-xs md:text-base font-normal text-gray-500">Paris Cham Express</p>
+                        </div>
+                    </div>
+                    <div class="md:ml-2">
+                        <h1 class="text-xs text-gray-500 font-medium">Start from</h1>
+                        <p class="text-sm md:text-lg text-slate-800 font-semibold">$120</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full bg-white space-y-3">
+                <div class="w-full h-[10rem] md:h-[15rem] object-contain">
+                    <img class="w-full h-full rounded-xl" src="images/Bordeaux to Strasbourg.jpg"/>
+                </div>
+                <div class="space-y-2 md:space-y-3 mr-10">
+                    <h1 class="md:ml-2 text-base md:text-xl font-medium tracking-tight text-gray-800">Bordeaux to Strasbourg</h1>
+                    <div class="space-y-1">
+                        <div class="flex justify-normal items-center gap-1">
+                            <svg class="w-4 md:w-5 lg:w-7 stroke-[1.5] stroke-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="text-xs md:text-base font-normal text-gray-500">Economy</p>
+                        </div>
+                        <div class="flex justify-normal items-center gap-1">
+                            <svg class="w-4 md:w-5 lg:w-7 stroke-[0] stroke-gray-500" fill="#6b7280" stroke="currentColor" viewBox="-7.5 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.36 5.32h-7.76c-2.52 0-4.6 2.080-4.6 4.64v9.28c0 2.12 1.44 3.88 3.36 4.44l-1.56 1.56c-0.32 0.32-0.32 0.84 0 1.16 0.16 0.16 0.36 0.24 0.6 0.24 0.2 0 0.44-0.080 0.6-0.24l2.56-2.56h5.88l2.56 2.56c0.16 0.16 0.36 0.24 0.6 0.24s0.44-0.080 0.6-0.24c0.32-0.32 0.32-0.84 0-1.16l-1.6-1.56c1.92-0.56 3.36-2.32 3.36-4.44v-9.28c0-2.56-2.040-4.64-4.6-4.64zM15.32 19.24c0 1.64-1.32 2.96-2.96 2.96h-7.76c-1.64 0-2.96-1.32-2.96-2.96v-9.28c0-1.64 1.32-2.96 2.96-2.96h7.76c1.64 0 2.96 1.32 2.96 2.96v9.28zM8.48 15.56c-1.44 0-2.6 1.16-2.6 2.6s1.16 2.6 2.6 2.6 2.6-1.16 2.6-2.6-1.16-2.6-2.6-2.6zM8.48 19.080c-0.52 0-0.92-0.4-0.92-0.92s0.4-0.92 0.92-0.92 0.92 0.4 0.92 0.92c0 0.48-0.4 0.92-0.92 0.92zM12.16 8.36h-7.32c-1.040 0-1.84 0.84-1.84 1.84v2.36c0 1.040 0.84 1.84 1.84 1.84h7.32c1.040 0 1.84-0.84 1.84-1.84v-2.36c0-1-0.84-1.84-1.84-1.84zM12.36 12.56c0 0.12-0.080 0.2-0.2 0.2h-7.32c-0.12 0-0.2-0.080-0.2-0.2v-2.36c0-0.12 0.080-0.2 0.2-0.2h7.32c0.12 0 0.2 0.080 0.2 0.2v2.36z"></path>
+                            </svg>
+                            <p class="text-xs md:text-base font-normal text-gray-500">Vineyard Voyage</p>
+                        </div>
+                    </div>
+                    <div class="md:ml-2">
+                        <h1 class="text-xs text-gray-500 font-medium">Start from</h1>
+                        <p class="text-sm md:text-lg text-slate-800 font-semibold">$50</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full bg-white space-y-3">
+                <div class="w-full h-[10rem] md:h-[15rem] object-contain">
+                    <img class="w-full h-full rounded-xl" src="images/Marseille to Avignon.jpg"/>
+                </div>
+                <div class="space-y-2 md:space-y-3 mr-10">
+                    <h1 class="md:ml-2 text-base md:text-xl font-medium tracking-tight text-gray-800">Marseille to Avignon</h1>
+                    <div class="space-y-1">
+                        <div class="flex justify-normal items-center gap-1">
+                            <svg class="w-4 md:w-5 lg:w-7 stroke-[1.5] stroke-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="text-xs md:text-base font-normal text-gray-500">Executive</p>
+                        </div>
+                        <div class="flex justify-normal items-center gap-1">
+                            <svg class="w-4 md:w-5 lg:w-7 stroke-[0] stroke-gray-500" fill="#6b7280" stroke="currentColor" viewBox="-7.5 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.36 5.32h-7.76c-2.52 0-4.6 2.080-4.6 4.64v9.28c0 2.12 1.44 3.88 3.36 4.44l-1.56 1.56c-0.32 0.32-0.32 0.84 0 1.16 0.16 0.16 0.36 0.24 0.6 0.24 0.2 0 0.44-0.080 0.6-0.24l2.56-2.56h5.88l2.56 2.56c0.16 0.16 0.36 0.24 0.6 0.24s0.44-0.080 0.6-0.24c0.32-0.32 0.32-0.84 0-1.16l-1.6-1.56c1.92-0.56 3.36-2.32 3.36-4.44v-9.28c0-2.56-2.040-4.64-4.6-4.64zM15.32 19.24c0 1.64-1.32 2.96-2.96 2.96h-7.76c-1.64 0-2.96-1.32-2.96-2.96v-9.28c0-1.64 1.32-2.96 2.96-2.96h7.76c1.64 0 2.96 1.32 2.96 2.96v9.28zM8.48 15.56c-1.44 0-2.6 1.16-2.6 2.6s1.16 2.6 2.6 2.6 2.6-1.16 2.6-2.6-1.16-2.6-2.6-2.6zM8.48 19.080c-0.52 0-0.92-0.4-0.92-0.92s0.4-0.92 0.92-0.92 0.92 0.4 0.92 0.92c0 0.48-0.4 0.92-0.92 0.92zM12.16 8.36h-7.32c-1.040 0-1.84 0.84-1.84 1.84v2.36c0 1.040 0.84 1.84 1.84 1.84h7.32c1.040 0 1.84-0.84 1.84-1.84v-2.36c0-1-0.84-1.84-1.84-1.84zM12.36 12.56c0 0.12-0.080 0.2-0.2 0.2h-7.32c-0.12 0-0.2-0.080-0.2-0.2v-2.36c0-0.12 0.080-0.2 0.2-0.2h7.32c0.12 0 0.2 0.080 0.2 0.2v2.36z"></path>
+                            </svg>
+                            <p class="text-xs md:text-base font-normal text-gray-500">Provencal Sunshine</p>
+                        </div>
+                    </div>
+                    <div class="md:ml-2">
+                        <h1 class="text-xs text-gray-500 font-medium">Start from</h1>
+                        <p class="text-sm md:text-lg text-slate-800 font-semibold">$85</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full bg-white space-y-3">
+                <div class="w-full h-[10rem] md:h-[15rem] object-contain">
+                    <img class="w-full h-full rounded-xl" src="images/Lyon to Chamonix.jpg"/>
+                </div>
+                <div class="space-y-2 md:space-y-3 mr-10">
+                    <h1 class="md:ml-2 text-base md:text-xl font-medium tracking-tight text-gray-800">Lyon to Chamonix</h1>
+                    <div class="space-y-1">
+                        <div class="flex justify-normal items-center gap-1">
+                            <svg class="w-4 md:w-5 lg:w-7 stroke-[1.5] stroke-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 12C13.1046 12 14 11.1046 14 10C14 8.89543 13.1046 8 12 8C10.8954 8 10 8.89543 10 10C10 11.1046 10.8954 12 12 12Z" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <p class="text-xs md:text-base font-normal text-gray-500">Luxury</p>
+                        </div>
+                        <div class="flex justify-normal items-center gap-1">
+                            <svg class="w-4 md:w-5 lg:w-7 stroke-[0] stroke-gray-500" fill="#6b7280" stroke="currentColor" viewBox="-7.5 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.36 5.32h-7.76c-2.52 0-4.6 2.080-4.6 4.64v9.28c0 2.12 1.44 3.88 3.36 4.44l-1.56 1.56c-0.32 0.32-0.32 0.84 0 1.16 0.16 0.16 0.36 0.24 0.6 0.24 0.2 0 0.44-0.080 0.6-0.24l2.56-2.56h5.88l2.56 2.56c0.16 0.16 0.36 0.24 0.6 0.24s0.44-0.080 0.6-0.24c0.32-0.32 0.32-0.84 0-1.16l-1.6-1.56c1.92-0.56 3.36-2.32 3.36-4.44v-9.28c0-2.56-2.040-4.64-4.6-4.64zM15.32 19.24c0 1.64-1.32 2.96-2.96 2.96h-7.76c-1.64 0-2.96-1.32-2.96-2.96v-9.28c0-1.64 1.32-2.96 2.96-2.96h7.76c1.64 0 2.96 1.32 2.96 2.96v9.28zM8.48 15.56c-1.44 0-2.6 1.16-2.6 2.6s1.16 2.6 2.6 2.6 2.6-1.16 2.6-2.6-1.16-2.6-2.6-2.6zM8.48 19.080c-0.52 0-0.92-0.4-0.92-0.92s0.4-0.92 0.92-0.92 0.92 0.4 0.92 0.92c0 0.48-0.4 0.92-0.92 0.92zM12.16 8.36h-7.32c-1.040 0-1.84 0.84-1.84 1.84v2.36c0 1.040 0.84 1.84 1.84 1.84h7.32c1.040 0 1.84-0.84 1.84-1.84v-2.36c0-1-0.84-1.84-1.84-1.84zM12.36 12.56c0 0.12-0.080 0.2-0.2 0.2h-7.32c-0.12 0-0.2-0.080-0.2-0.2v-2.36c0-0.12 0.080-0.2 0.2-0.2h7.32c0.12 0 0.2 0.080 0.2 0.2v2.36z"></path>
+                            </svg>
+                            <p class="text-xs md:text-base font-normal text-gray-500">Majestic Alps Explorer</p>
+                        </div>
+                    </div>
+                    <div class="md:ml-2">
+                        <h1 class="text-xs text-gray-500 font-medium">Start from</h1>
+                        <p class="text-sm md:text-lg text-slate-800 font-semibold">$119</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog End -->
+
+    <!-- Footer Start -->
+    <footer class="bg-white">
+        <div class="container p-6 mx-auto">    
+            <hr class="h-px my-6 bg-gray-200 border-none">
+            <p class="text-[8px] md:text-base text-center text-gray-500 font-normal">© Train Booking 2024 - All rights reserved</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Script Start -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Script End -->
+     
+</body>
+</html>
